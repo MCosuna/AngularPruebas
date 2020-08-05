@@ -15,7 +15,7 @@ export class ClientesService {
   peti(categoria) {
     this.http.get('https://newsapi.org/v2/top-headlines?' +
     'country=us&' +
-    'apiKey=8e0121aa4ee249018a70ff28eb5a0c6e&category='+categoria+'').subscribe(
+    'apiKey=YOUR-API-KEY='+categoria+'').subscribe(
     resultado => {
      this.todo = resultado;
    })
